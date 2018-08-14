@@ -3,7 +3,7 @@ function getDigit(i,num){
    return parseInt((parseInt(num) / (10 ** (i - 1))) % 10);
 }
 
-function isDigitsZero(num){
+function areDigitsZero(num){
   var length = num.toString().length;
 
   for (var i = 1; i < length; i++) {
@@ -45,7 +45,7 @@ function convertFromNumberToQuantitative(num){
         text += "";
       }
       else if(i > 3){
-        if(digit == 1 && (isDigitsZero(num) || length == 4)) {
+        if(digit == 1 && (areDigitsZero(num) || length == 4)) {
           text+= tp[Math.floor(i / 3)];
         }else{
         text += dec[digit] + tp[Math.floor(i / 3)];
