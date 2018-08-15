@@ -1,6 +1,6 @@
 function getDigit(i,num){
 
-   return parseInt((parseInt(num) / (10 ** (i - 1))) % 10);
+     return parseInt(parseInt((parseInt(num) / 10 ** (i-1))) % 10);
 }
 
 function areDigitsZero(num){
